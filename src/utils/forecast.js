@@ -11,7 +11,7 @@ function forecast(latitude,longitude,callback){
         const output = response.body.current
         // console.log(output)
         callback(undefined,{
-            weather: output.weather_descriptions[0]+'. Temperature is '+ output.temperature + ' degrees celsius. ' + output.precip+' % change of raining'
+            weather: output.weather_descriptions[0]+'. Temperature is '+ output.temperature + ' degrees celsius. ' + output.precip+' % chance of raining'
             // weather_description:output.weather_descriptions[0] ,
             // temp: output.temperature,
             // precip: output.precip,
