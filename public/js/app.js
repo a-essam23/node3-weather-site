@@ -9,8 +9,9 @@ const messageTwo = document.querySelector('#error')
 
 
 weatherForm.addEventListener('submit', (e)=> {
-    messageOne.textContent='Loading...'
-    messageTwo.textContent=''
+    messageOne.textContent= 'Loading...'
+    
+    messageTwo.textContent= ''
     e.preventDefault()
     const location = search.value
     fetch('http://localhost:3000/weather?address='+location).then((response) =>{
